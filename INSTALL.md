@@ -14,7 +14,15 @@ chmod +x snapshot_v0-1-2.py
 
 This tells your system: "This file can be executed as a program"
 
-## Step 2: Copy to Your ~/bin Directory
+## Step 2: Create ~/bin Directory (if it doesn't exist)
+
+```bash
+mkdir -p ~/bin
+```
+
+This creates a `bin` folder in your home directory. The `-p` flag means "create if needed."
+
+## Step 3: Copy Script to ~/bin
 
 ```bash
 cp snapshot_v0-1-2.py ~/bin/snapshot
@@ -24,9 +32,21 @@ This copies the script to ~/bin and renames it to just `snapshot` (without .py).
 
 **Note:** The shebang line at the top (`#!/usr/bin/env python3`) tells the system to use Python even without the .py extension.
 
-## Step 3: Add ~/bin to Your PATH
+## Step 4: Add ~/bin to Your PATH
 
-Open your shell configuration file:
+First, check if ~/.zshrc exists:
+
+```bash
+ls ~/.zshrc
+```
+
+If not, create it:
+
+```bash
+touch ~/.zshrc
+```
+
+Then open it:
 
 ```bash
 nano ~/.zshrc
@@ -42,7 +62,7 @@ export PATH="$HOME/bin:$PATH"
 
 Save the file: `Ctrl+O` → `Enter` → `Ctrl+X`
 
-## Step 4: Reload Your Configuration
+## Step 5: Reload Your Configuration
 
 ```bash
 source ~/.zshrc
@@ -50,7 +70,7 @@ source ~/.zshrc
 
 This loads the changes you just made.
 
-## Step 5: Test It!
+## Step 6: Test It!
 
 From anywhere in your terminal, type:
 
