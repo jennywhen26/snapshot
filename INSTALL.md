@@ -105,5 +105,3 @@ Without the shebang, you'd have to type `python3 snapshot` every time. With it, 
 **"Permission denied"**
 - Make sure you ran `chmod +x snapshot_v0-1-2.py`
 
-**Script runs but asks for path**
-- Everything is working correctly! Just follow the prompts.
