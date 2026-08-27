@@ -1,4 +1,4 @@
-# Quick Installation Guide: Making Snapshot a Terminal Command
+# Quick Installation Guide: Making snapshot a Terminal Command
 
 ## What You're Doing
 
